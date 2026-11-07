@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f2">
+  <meta name="description" content="Reconnect with the Horizon G.B.S. School alumni community, discover events, and share your story.">
+  <title>Horizon Alumni | A community for every chapter</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> The Horizon community is always growing <a href="#events">See what's coming up <span aria-hidden="true">↗</span></a></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Horizon Alumni home">
+      <span class="brand-mark">H<span>.</span></span>
+      <span class="brand-name">HORIZON <small>G.B.S. SCHOOL ALUMNI</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+      <a href="#community">Community</a>
+      <a href="#alumni">Alumni</a>
+      <a href="#events">Events</a>
+      <a href="#stories">Stories</a>
+      <button class="button button-small button-dark" type="button" data-open-dialog="join-dialog">Join the network <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero" id="community">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> HORIZON G.B.S. SCHOOL</p>
+        <h1>One school.<br>Many <em>horizons.</em></h1>
+        <p class="hero-description">The place we started is still part of where we're going. Find your people, meet the next generation, and keep the Horizon spirit close.</p>
+        <div class="hero-actions">
+          <a class="button button-coral" href="#alumni">Meet the community <span aria-hidden="true">↘</span></a>
+          <button class="text-button" type="button" data-open-dialog="join-dialog">I'm a Horizon alum <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="hero-note"><span class="note-star" aria-hidden="true">✳</span><span><strong>From school days to what's next</strong><small>There is a place for every Horizon story.</small></span></div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=85" alt="A group working together around a table">
+        <div class="photo-tag"><span class="tag-mark">H</span><span>Horizon, wherever<br>life takes you.</span></div>
+        <span class="visual-index">01 / THE COMMUNITY</span>
+      </div>
+    </section>
+
+    <section class="intro-band" aria-label="Our community">
+      <p>THE CONNECTION CONTINUES</p>
+      <h2>Old friends. New ideas.<br><span>One Horizon.</span></h2>
+      <span class="band-asterisk" aria-hidden="true">✳</span>
+    </section>
+
+    <section class="section alumni-section" id="alumni">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> FIND YOUR PEOPLE</p><h2>A familiar face,<br><em>a new chapter.</em></h2></div>
+        <p class="section-aside">Browse a small sample of alumni profiles and find someone whose path feels familiar. The profiles below are illustrative examples.</p>
+      </div>
+      <div class="directory-tools">
+        <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="visually-hidden">Search alumni</span><input id="alumni-search" type="search" placeholder="Search name, role or city" autocomplete="off"></label>
+        <label class="select-box"><span class="visually-hidden">Filter alumni by field</span><select id="field-filter"><option value="all">All fields</option><option value="Design">Design</option><option value="Education">Education</option><option value="Technology">Technology</option><option value="Health">Health</option><option value="Business">Business</option></select></label>
+        <span class="result-count" id="result-count" aria-live="polite"></span>
+      </div>
+      <div class="alumni-grid" id="alumni-grid"></div>
+      <div class="directory-footer"><p>Know someone who should be here?</p><button class="text-button" type="button" data-open-dialog="join-dialog">Add your profile <span aria-hidden="true">→</span></button></div>
+    </section>
+
+    <section class="events-section" id="events">
+      <div class="section events-inner">
+        <div class="section-heading events-heading">
+          <div><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> SAVE A DATE</p><h2>Make room<br>for <em>reconnection.</em></h2></div>
+          <p class="section-aside">Good conversations have a way of picking up right where they left off. Find a gathering that works for you.</p>
+        </div>
+        <div class="events-grid" id="events-grid"></div>
+        <p class="demo-note">Event listings are sample content. Confirm dates and details with the school before publishing.</p>
+      </div>
+    </section>
+
+    <section class="section stories-section" id="stories">
+      <div class="section-heading story-heading">
+        <div><p class="eyebrow"><span class="eyebrow-line"></span> NOTES FROM THE NETWORK</p><h2>Every path has<br><em>a Horizon in it.</em></h2></div>
+        <button class="button button-outline" type="button" data-open-dialog="story-dialog">Share your story <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="stories-grid">
+        <article class="story story-featured">
+          <div class="story-art art-orange"><span class="art-label">A NOTE TO MY<br>YOUNGER SELF</span><span class="art-scribble" aria-hidden="true">✳</span><span class="art-number">01</span></div>
+          <div class="story-meta"><span>COMMUNITY PROMPT</span><span>4 MIN READ</span></div>
+          <h3>What would you tell the student you used to be?</h3>
+          <p>A little perspective travels a long way. Share one lesson, one memory, or one thing you wish you'd known.</p>
+          <button class="text-button" type="button" data-open-dialog="story-dialog">Add your note <span aria-hidden="true">→</span></button>
+        </article>
+        <article class="story story-secondary">
+          <div class="story-art art-blue"><span class="art-label">THE NEXT<br>CHAPTER</span><span class="art-scribble" aria-hidden="true">↗</span><span class="art-number">02</span></div>
+          <div class="story-meta"><span>ALUMNI SPOTLIGHT</span><span>COMMUNITY SERIES</span></div>
+          <h3>From a shared classroom to a shared idea</h3>
+          <p>Some of the best collaborations begin with a familiar hello. Tell us who you'd like to build with.</p>
+          <button class="text-button" type="button" data-open-dialog="story-dialog">Share an idea <span aria-hidden="true">→</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section class="join-band">
+      <div class="join-orbit" aria-hidden="true"><span>H</span></div>
+      <div class="join-copy"><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER STARTS HERE</p><h2>There's a place<br>for you <em>at Horizon.</em></h2></div>
+      <button class="button button-paper" type="button" data-open-dialog="join-dialog">Join the alumni network <span aria-hidden="true">↗</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <a class="brand brand-footer" href="#home"><span class="brand-mark">H<span>.</span></span><span class="brand-name">HORIZON <small>G.B.S. SCHOOL ALUMNI</small></span></a>
+      <p>One community, carried forward.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <label for="newsletter-email">A little Horizon in your inbox</label>
+        <div class="newsletter-input"><input id="newsletter-email" type="email" placeholder="Your email address" required><button type="submit" aria-label="Subscribe to alumni updates">→</button></div>
+        <small>Updates from the alumni community.</small>
+      </form>
+    </div>
+    <div class="footer-bottom"><span>© <span id="current-year"></span> Horizon G.B.S. School Alumni</span><a href="#home">Back to top ↑</a><span>Made for every chapter.</span></div>
+  </footer>
+
+  <dialog class="site-dialog" id="join-dialog" aria-labelledby="join-title">
+    <button class="dialog-close" type="button" aria-label="Close dialog">×</button>
+    <p class="eyebrow"><span class="eyebrow-line"></span> COME ON IN</p><h2 id="join-title">Stay in the<br><em>Horizon circle.</em></h2>
+    <p class="dialog-intro">Complete the Horizon alumni registration form. Your response will be recorded in the Google account that owns the form.</p>
+    <a class="button button-coral form-submit" href="https://docs.google.com/forms/d/e/1FAIpQLSfpn3s7fEEHt0bR99wV5lHoKfjDjANCMfAQnlAP_rHYYxnxrQ/viewform" target="_blank" rel="noopener noreferrer">Open registration form <span aria-hidden="true">↗</span></a>
+  </dialog>
+
+  <dialog class="site-dialog" id="story-dialog" aria-labelledby="story-title">
+    <button class="dialog-close" type="button" aria-label="Close dialog">×</button>
+    <p class="eyebrow"><span class="eyebrow-line"></span> YOUR WORDS, YOUR WAY</p><h2 id="story-title">A story worth<br><em>passing on.</em></h2>
+    <p class="dialog-intro">Your note stays in this browser in this demo. It is not published or sent anywhere.</p>
+    <form id="story-form" class="dialog-form">
+      <label>Your name<input name="name" required maxlength="80" placeholder="Your name"></label>
+      <label>What would you like to share?<textarea name="story" rows="4" required maxlength="800" placeholder="A memory, a lesson, a note to your younger self..."></textarea></label>
+      <button class="button button-coral form-submit" type="submit">Save my story <span aria-hidden="true">↗</span></button>
+    </form>
+  </dialog>
+
+  <dialog class="site-dialog profile-dialog" id="profile-dialog" aria-labelledby="profile-title">
+    <button class="dialog-close" type="button" aria-label="Close dialog">×</button>
+    <div id="profile-content"></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
